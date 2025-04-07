@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="IronRodChat">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="IronRodChat">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <title>IronRodChat</title>
+
+  <!-- Firebase Compat SDKs (usando versão compatível com projeto antigo) -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+  <!-- Firebase Init -->
+  <script>
+    const firebaseConfig = {
+   apiKey: "AIzaSyCLZbkO8d1o3U6KBatSnEIXdM4NtDgj6DE",
+   authDomain: "ironrodchat-web.firebaseapp.com",
+   projectId: "ironrodchat-web",
+   storageBucket: "ironrodchat-web.firebasestorage.app",
+   messagingSenderId: "397470848541",
+   appId: "1:397470848541:web:a80bda5ab834b9daabd8f4"
+ };
+
+ // Inicializa o Firebase para Flutter Web
+ firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+<script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
