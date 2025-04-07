@@ -11,7 +11,7 @@ class ResetPasswordPage extends StatefulWidget {
 class _ResetPasswordPageState extends State<ResetPasswordPage> {
   final _emailController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-  final FirebaseService _firebaseService = FirebaseService();
+  final FirebaseService _firebaseService = FirebaseService();<base href="/IronRodChat/">
 
   Future<void> _resetPassword() async {
     if (!_formKey.currentState!.validate()) return;
